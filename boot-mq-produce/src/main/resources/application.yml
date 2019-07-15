@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+spring:
+  activemq:
+    broker-url: tcp://10.199.202.71:61616
+    # failover:(tcp://192.168.160.137:61616,tcp://192.168.160.137:61617,tcp://192.168.160.137:61618)
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: false # 是否是主题 false  就是queue 默认就是队列
+
+#自己定义队列名称
+myqueue: boot-activemq-queue

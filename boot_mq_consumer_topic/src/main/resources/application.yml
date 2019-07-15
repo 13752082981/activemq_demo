@@ -1,0 +1,13 @@
+server:
+  port: 5555
+
+spring:
+  activemq:
+    broker-url: tcp://10.199.202.71:61616
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: true # 是否是主题 false  就是queue 默认就是队列
+
+#自己定义主题名称
+mytopic: boot-activemq-topic
